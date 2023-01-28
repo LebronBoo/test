@@ -4,12 +4,30 @@ import com.example.mall.mbg.mapper.UserMapper;
 import com.example.mall.mbg.model.User;
 import com.example.mall.mbg.model.UserExample;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 
 public class UserMapperImpl implements UserMapper {
+    /*
+    执行SQl语句对象
+    */
+    private static PreparedStatement ps;
+    /*
+    数据库连接
+    */
+    private  static Connection conn;
+    /*
+    结果集
+    */
+    private static ResultSet rs;
 
     @Override
     public int countByExample(UserExample example) {
+        try{
+
+        }
         return 0;
     }
 

@@ -14,12 +14,12 @@
                 <property name="url" value="${jdbc.connectionURL}"/>
                 <property name="username" value="${jdbc.userId}"/>
                 <property name="password" value="${jdbc.password}"/>
-                <property name="nullCatalogMeansCurrent" value="true" />
+<!--                <property name="nullCatalogMeansCurrent" value="true" />-->
             </dataSource>
         </environment>
     </environments>
     <!--    这里要写sql映射-->
     <mappers>
-        <mapper resource="com/kinroy/Mapper/userMapper.xml"/>
+        <mapper resource="com/example/mall/mbg/mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
